@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TODO</title>
+
+  <!-- font awesome icons cdn -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Search fa icons link -->
+
+  <!-- https://fontawesome.com/v5.15/icons?d=gallery&p=2 -->
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Dancing Script -->
+  <!-- OpenSans -->
+  <!-- Pacifico -->
+  <!-- Poppins -->
+  <!-- QuickSand -->
+
+  <!-- 
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Pacifico', cursive;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Quicksand', sans-serif; 
+    -->
+
+  <!-- bootstrap 5 cdn -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="todo.css" />
+</head>
+
+<body>
+  <div class="root container">
+    <!-- Title section -->
+
+    <h1 class="bg-primary text-center text-white rounded mb-4 py-2 shadow">
+      My List
+    </h1>
+
+    <!-- create post section -->
+
+    <div class="create-post mb-5">
+      <h3 class="text-secondary mb-2">Add Task</h3>
+
+      <textarea class="form-control mb-3 border shadow border-0" id="post-text" cols="30"
+        placeholder="Hey What's on your mind ?"></textarea>
+
+      <button class="btn btn-primary add-post">
+        ADD
+        <i class="fas fa-plus ms-2"></i>
+      </button>
+
+      <button class="btn btn-warning hidden edit-post">
+        Update
+        <i class="fas fa-plus ms-2"></i>
+      </button>
+    </div>
+
+    <!-- all posts section (post cards) -->
+
+    <!-- Search bar -->
+
+    <div class="search-bar mb-5 w-100 d-flex align-items-center justify-content-center">
+      <i class="fas fa-search text-black-50 fw-bold lead me-3"></i>
+      <input type="text" class="form-control shadow-sm border-0" placeholder="Search by post name " id="search-input" />
+    </div>
+    <div class="title mb-3 d-flex align-items-center justify-content-between">
+      <h3 class="text-secondary mb-2">Your Tasks</h3>
+      <button class="btn btn-primary dlt-all disabled">
+        Delete All
+        <i class="fas fa-trash"></i>
+      </button>
+    </div>
+  </div>
+  <div class="post-section d-flex align-content-center justify-content-center flex-wrap mb-5"></div>
+
+</body>
+
+<!-- bootstrap 5 js cdn -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script src="basicTodo.js"></script>
+
+</html>
